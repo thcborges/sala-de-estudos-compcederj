@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Audiowide';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #eee;
+}
+/*ESTILIZAÇÃO DO CABEÇALHO*/
+header.cabecalho {
+    width: 100%;
+    padding: 20px 0;
+    margin: auto;
+    position: relative;
+    background: #4169e1; /* Old browsers */
+    background: -moz-linear-gradient(top, #4169e1 0%, #00bfff 22%, #00bfff 43%, #4169e1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #4169e1 0%,#00bfff 22%,#00bfff 43%,#4169e1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #4169e1 0%,#00bfff 22%,#00bfff 43%,#4169e1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4169e1', endColorstr='#4169e1',GradientType=0 ); /* IE6-9 */
+    box-shadow: 0 3px 5px #000000;
+}
+header h1.titulo, header h3 {
+    font-family: 'Audiowide', "Courier New", cursive;
+    text-align: center;
+}
+header h3 {
+    font-weight: 200;
+}
+
+/*Crachá do LinkedIn*/
+#cracha {
+    position: relative;
+    float: right;
+    z-index: 5;
+    margin-left: 15px;
+}
+
+
+/*ESTILIZAÇÃO DO MENU LATERAL RETRÁTIL*/
+#check, .radioescondido {
+    display: none;
+}
+#icone {
+    cursor: pointer;
+    padding: 8px;
+    position: absolute;
+    margin-top: -43px;
+    z-index: 3;
+}
+.barra {
+    background: rgba(65,105,225,1);
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+    box-shadow: 2px 2px 5px #000000;
+    z-index: 2;
+}
+nav {
+    width: 300px;
+    position: absolute;
+
+}
+.menu {
+    background: rgba(6,10,22,.5);
+    padding: 10px;
+    font-family: 'Verdana', sans-serif;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: #f4f4f9;
+    border-bottom: 4px groove #aaaaaa;
+    opacity: 0;
+    margin-top: 200px;
+    cursor: pointer;
+}
+.menu:hover {
+    background: rgba(6,10,22,.8);
+}
+.materias {
+    background: #27376b;
+    width: 300px;
+    max-height: 0;
+    transition: all 0.4s linear;
+    text-align: left;
+    overflow: hidden;
+    margin: 10px auto -10px -10px;
+}
+.link {
+    background: #99ccff;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    cursor: pointer;
+}
+.radioescondido:checked ~ .materias {
+    height: auto;
+    max-height:  500px;
+    transform: all;
+}
+#check:checked ~ .barra{
+    transform: translate(300px);
+}
+#check:checked ~ .barra nav .menu{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .1s;
+}
+/*CONTEÚDO DA PÁGINA*/
+section.conteudo {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: 10px auto 0 auto;
+    z-index: 0;
+}
+article#comoestudar {
+    width: 800px;
+    text-align: justify;
+    margin: 10px auto 10px auto;
+}
+article#comoestudar h4 {
+    font-family: 'Arial', sans-serif;
+    font-size: 16pt;
+}
+article#comoestudar ul {
+    list-style: none inside;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+article#comoestudar ul li {
+    margin-top: 5px;
+}
+article#comoestudar ul li span {
+    letter-spacing: 10px;
+}
+/*LINK PARA AS AULAS*/
+#aulas p {
+    background-color: rgba(103, 205, 255, .5);
+    display: inline-block;
+    border-left: 4px groove;
+    border-right: 4px groove;
+}

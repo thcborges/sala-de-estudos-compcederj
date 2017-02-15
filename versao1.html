@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="PT_BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aulas CompCEDERJ</title>
+    <style>
+        .escondido {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sala de Estudos CompCEDERJ</h1>
+    <nav>
+        <label for="prim"><input type="radio" name="periodo" onchange="mostra('primeiro')" id="prim">Primeiro Período</label>
+        <label for="seg"><input type="radio" name="periodo" onchange="mostra('segundo')" id="seg">Segundo Período</label>
+        <label for="ter"><input type="radio" name="periodo" onchange="mostra('terceiro')" id="ter">Terceiro Período</label>
+        <label for="qua"><input type="radio" name="periodo" onchange="mostra('quarto')" id="qua">Quarto Período</label>
+        <label for="qui"><input type="radio" name="periodo" onchange="mostra('quinto')" id="qui">Quinto Período</label>
+        <label for="sex"><input type="radio" name="periodo" onchange="mostra('sexto')" id="sex">Sexto Período</label>
+    </nav>
+    <section>
+        <article id="aulas">
+            <h3>Escolha um Período</h3>
+        </article>
+        <article id="comoestudar">
+            <h4>COMO ESTUDAR PARA AS DISCIPLINAS ?</h4>
+            <ul>
+                <li>Assista a(s) aula(s) com atenção para entender o que está sendo explicado e cobrado nas provas.</li>
+                <li>Revise a aula estudada no mesmo dia para fixar o assunto explicado.</li>
+                <li>Faça e refaça toda a sua ad proposta pelo professor e não deixe NUNCA para a ÚLTIMA HORA.</li>
+                <li>Esteja pelo menos 1(uma) semana antes do cronograma da disciplina estudada.</li>
+                <li>Tenha em posse o livro texto da disciplina compre-o o livro, pegue-o emprestado na biblioteca ou ter a versão digital (.pdf) no seu PC, tablet, smartphone, celular ou similares.<br><em>Pois no livro texto esta contido as explicações mais detalhadas que o professor demonstra na vídeo aula , explicações de exercícios de ads e aps.</em></li>
+                <li>Dúvida em relação a alguma questão ou quer uma explicação mais detalhada, vocês tem o auxílio do tutor presencial no seu polo, não tem tutor presencial no seu polo, tem também a ajuda do tutor a distância da sua disciplina, se tutor a distância não te explica de forma contundente, então utilize os fóruns/grupos de estudo .</li>
+                <li>Para fazer uma boa prova: Faça refaça a sua ad e também estude pelas provas anteriores, além de estar "afiado no conteúdo das disciplinas.</li>
+            </ul>
+            <p style="font-weight: bolder;font-style: italic;">Este curso exige que o aluno seja autodidata e fornece o mínimo de suporte para o aluno. Se você ainda não é muito organizado e nunca colocou as dicas em prática na vida e deixa tudo para a última hora, você vai "sofrer" demais neste curso.﻿</p>
+        </article>
+        <article id="primeiro" class="escondido">
+            <h3><a href="javascript:escreveaulas('5001', 13);">Introdução à Informática</a></h3>
+            <div id="5001"></div>
+            <h3><a href="javascript:escreveaulas('5002', 20);">Construção de Páginas WEB (CPW)</a></h3>
+            <div id="5002"></div>
+            <h3><a href="javascript:escreveaulas('5005', 15);">Projeto e Desenvolvimento de Algorismos (PDA)</a></h3>
+            <div id="5005"></div>
+        </article>
+        <article id="segundo" class="escondido">
+            <h3><a href="javascript:escreveaulas('5004', 24);">Fundamentos de Algoritmos para Computação</a></h3>
+            <div id="5004"></div>
+            <h3><a href="javascript:escreveaulas('5006', 15);">Álgebra Linear</a></h3>
+            <div id="5006"></div>
+            <h3><a href="javascript:escreveaulas('5009', 14);">Fundamentos de Programação (Pascal)</a></h3>
+            <div id="5009"></div>
+            <h3><a href="javascript:escreveaulas('5029', 12);">Fundamentos de Programação (Python)</a></h3>
+            <div id="5029"></div>
+            <h3><a href="javascript:escreveaulas('5010', 10);">Organização de Computadores</a></h3>
+            <div id="5010"></div>
+        </article>
+        <article id="terceiro" class="escondido">
+            <h3><a href="javascript:escreveaulas('5008', 9);">Matemática para Computação</a></h3>
+            <div id="5008"></div>
+            <h3><a href="javascript:escreveaulas('5007', 36);">Estrutura de Dados</a></h3>
+            <div id="5007"></div>
+            <h3><a href="javascript:escreveaulas('5013', 17);">Programação com Interfaces Gráficas (Delphi)</a></h3>
+            <div id="5013"></div>
+            <h3><a href="javascript:escreveaulas('5015', 26);">Física para Computação</a></h3>
+            <div id="5015"></div>
+        </article>
+        <article id="quarto" class="escondido">
+            <h3><a href="javascript:escreveaulas('5014', 29);">Banco de Dados</a></h3>
+            <div id="5014"></div>
+            <h3><a href="javascript:escreveaulas('5012', 12);">Probabilidade e Estatística</a></h3>
+            <div id="5012"></div>
+            <h3><a href="javascript:escreveaulas('5011', 23);">Modelagem da Informação</a></h3>
+            <div id="5011"></div>
+            <h3><a href="javascript:escreveaulas('5016', 12);">Sistemas Operacionais</a></h3>
+            <div id="5016"></div>
+        </article>
+        <article id="quinto" class="escondido">
+            <h3><a href="javascript:escreveaulas('5021', 13);">Programação Orientada a Ojetos (JAVA)</a></h3>
+            <div id="5021"></div>
+            <h3><a href="javascript:escreveaulas('5018', 24);">Analise de Sistemas</a></h3>
+            <div id="5018"></div>
+            <h3><a href="javascript:escreveaulas('5019', 18);">Engenharia de Software</a></h3>
+            <div id="5019"></div>
+            <h3><a href="javascript:escreveaulas('5020', 14);">Rede de Computadores (foco em WEB)</a></h3>
+            <div id="5020"></div>
+        </article>
+        <article id="sexto" class="escondido">
+            <h3><a href="javascript:escreveaulas('5017', 14);">Programação de Aplicações WEB (PHP)</a></h3>
+            <div id="5017"></div>
+            <h3><a href="javascript:escreveaulas('5022', 21);">Arquitetura e Projeto de Sistemas</a></h3>
+            <div id="5022"></div>
+            <h3><a href="javascript:escreveaulas('5023', 19);">Computação Gráfica</a></h3>
+            <div id="5023"></div>
+            <h3><a href="javascript:escreveaulas('5024', 14);">Empreendedorismo e Ética</a></h3>
+            <div id="5024"></div>
+        </article>
+    </section>
+</body>
+<script>
+    function mostra(periodo) {
+        var conteudo = document.getElementById(periodo).innerHTML;
+        document.getElementById("aulas").innerHTML = conteudo;
+    }
+    function escreveaulas(materia, aulas) {
+        var escreve = "<h2>AULAS</h2>";
+        if (document.getElementById(materia).innerHTML == "") {
+            for (var i = 1; i <= aulas; i++) {
+                if (i < 10) {
+                    escreve = escreve + "<p><a href='http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead0" + materia + "/Aula_00" + i + "/Aula_00" + i + ".xml' target='_blank'>Aula 0" + i + "</a></p>";
+                } else {
+                    escreve = escreve + "<p><a href='http://videoaula.rnp.br/v.php?f=/cederj/sistemas_comp/ead0" + materia + "/Aula_0" + i + "/Aula_0" + i + ".xml' target='_blank'>Aula " + i + "</a></p>";
+                }
+            }
+            document.getElementById(materia).innerHTML = escreve;
+        } else {
+            document.getElementById(materia).innerHTML = "";
+        }
+    }
+</script>
+</html>
