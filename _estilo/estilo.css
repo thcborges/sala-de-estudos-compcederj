@@ -8,12 +8,12 @@
 body {
     background: #eee;
 }
+
 /*ESTILIZAÇÃO DO CABEÇALHO*/
 header.cabecalho {
     width: 100%;
     padding: 20px 0;
     margin: auto;
-    position: relative;
     background: #4169e1; /* Old browsers */
     background: -moz-linear-gradient(top, #4169e1 0%, #00bfff 22%, #00bfff 43%, #4169e1 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #4169e1 0%,#00bfff 22%,#00bfff 43%,#4169e1 100%); /* Chrome10-25,Safari5.1-6 */
@@ -36,7 +36,6 @@ header h3 {
     z-index: 5;
     margin-left: 15px;
 }
-
 
 /*ESTILIZAÇÃO DO MENU LATERAL RETRÁTIL*/
 #check, .radioescondido {
@@ -109,22 +108,25 @@ nav {
     margin-top: 0;
     transition-delay: .1s;
 }
+
 /*CONTEÚDO DA PÁGINA*/
 section.conteudo {
-    width: 100%;
+    width: 800px;
     text-align: center;
     position: relative;
     margin: 10px auto 0 auto;
     z-index: 0;
 }
 article#comoestudar {
-    width: 800px;
+    width: 780px;
     text-align: justify;
     margin: 10px auto 10px auto;
+    padding: 10px;
 }
 article#comoestudar h4 {
     font-family: 'Arial', sans-serif;
     font-size: 16pt;
+    text-align: center;
 }
 article#comoestudar ul {
     list-style: none inside;
@@ -137,10 +139,58 @@ article#comoestudar ul li {
 article#comoestudar ul li span {
     letter-spacing: 10px;
 }
+
+#participe{
+    display: inline-block;
+    margin: 2px auto 20px auto;
+}
+.redes_sociais{
+    display: inline;
+    margin: 5px;
+    padding-bottom: 15px;
+}
+
+#participe a {
+    text-decoration: none;
+}
+
 /*LINK PARA AS AULAS*/
+#aulas, #participe, #comoestudar, #mapa {
+    background-color: #f4f4f9;
+    box-shadow: 0 1px 1px #222222;
+}
+
+#aulas {
+    width: 800px;
+}
+
 #aulas p {
+    font-family: 'Arial', sans-serif;
+    padding: 2px;
+}
+#aulas p.link_aula {
     background-color: rgba(103, 205, 255, .5);
     display: inline-block;
-    border-left: 4px groove;
-    border-right: 4px groove;
+    padding: 4px;
+    border: 3px groove;
+    margin: 10px 2px 2px 2px;
+}
+
+#aulas h4 {
+    font-family: 'Arial', sans-serif;
+    padding: 10px;
+    font-size: 16pt;
+    text-align: center;
+}
+#aulas h3 {
+    font-family: 'Arial', sans-serif;
+    padding: 5px;
+    font-size: 14pt;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*Mapa de disciplinas*/
+#mapa {
+    margin-bottom: 10px;
 }

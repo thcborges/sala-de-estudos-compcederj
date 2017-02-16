@@ -14,19 +14,22 @@
     </header>
     <input type="checkbox" id="check">
     <label for="check" id="icone"><img src="_imagens/icone.png" alt="menu" width="33" height="28"></label>
+    <!-- Menu
+    Este é preenchido automaticamente com as matérias através do JavaScript.
+    Não existe necessidade de escrever as matérias todas novamente.
+    -->
     <div class="barra">
         <nav>
             <label for="prim">
                 <div class="menu">
                     <input type="radio" name="periodo" id="prim" class="radioescondido">Primeiro Periodo
-                    <div id="primeiro" class="materias">teste</div>
+                    <div id="primeiro" class="materias"></div>
                 </div>
-
             </label>
             <label for="seg">
                 <div class="menu">
                     <input type="radio" name="periodo" id="seg" class="radioescondido">Segundo Periodo
-                    <div id="segundo" class="materias">teste</div>
+                    <div id="segundo" class="materias"></div>
                 </div>
             </label>
             <label for="ter">
@@ -56,15 +59,45 @@
         </nav>
     </div>
     <section class="conteudo">
-    <div id="cracha" style="position: relative; float: right; z-index: 5; margin-left: 15px; margin-bottom: 15px;">
-        <!--<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="pt_BR" data-type="horizontal" data-theme="dark" data-vanity="thcborges"><a class="LI-simple-link" href='https://br.linkedin.com/in/thcborges?trk=profile-badge'>Thiago da Cunha Borges</a></div>-->
-        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="pt_BR" data-type="vertical" data-theme="dark" data-vanity="thcborges"><a class="LI-simple-link" href='https://br.linkedin.com/in/thcborges?trk=profile-badge'>Thiago da Cunha Borges</a></div>
+        <div id="cracha" style="position: relative; float: right; z-index: 5; margin-left: 15px; margin-bottom: 15px;">
+        <!--Crachá do Linkedin-->
+        <!--<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="pt_BR" data-type="vertical" data-theme="dark" data-vanity="thcborges">-->
+            <!--<a class="LI-simple-link" href='https://br.linkedin.com/in/thcborges?trk=profile-badge'>-->
+                <!--Thiago da Cunha Borges-->
+            <!--</a>-->
+        <!--</div>-->
     </div>
+        <div id="participe">
+            <h4>PARTICIPE!</h4>
+            <a href="https://www.facebook.com/groups/compcederj/" target="_blank" style="text-decoration: none">
+                <figure class="redes_sociais">
+                    <img src="_imagens/fb.png" alt="Facebook">
+                </figure>
+            </a>
+            <a href="https://t.me/computacaoUFF" target="_blank" style="text-decoration: none">
+                <figure class="redes_sociais">
+                    <img src="_imagens/telegram.png" alt="Telegram">
+                </figure>
+            </a>
+            <a href="https://goo.gl/UPc92N" target="_blank" style="text-decoration: none">
+                <figure class="redes_sociais">
+                    <img src="_imagens/drive.png" alt="Google Drive">
+                </figure>
+            </a>
+            <a href="https://slack-compcederj.herokuapp.com/">
+                <figure class="redes_sociais" target="_blank" style="text-decoration: none">
+                    <img src="_imagens/slack.png" alt="Slack">
+                </figure>
+            </a>
+        </div>
         <article id="aulas">
-            <!--Seção onde irão aparecer as aulas desejadas-->
+            <!--Seção onde irão aparecer as aulas desejadas
+            Ideal que fique em branco pois o JavaScript irá alterá-la frequentemente.
+            -->
         </article>
         <article id="comoestudar">
-            <h4>COMO ESTUDAR PARA AS DISCIPLINAS ?</h4>
+
+            <h4>COMO ESTUDAR PARA AS DISCIPLINAS:</h4>
             <ul>
                 <li><span class="marcador"> > </span> Assista a(s) aula(s) com atenção para entender o que está sendo explicado e cobrado nas provas.</li>
                 <li><span class="marcador"> > </span> Revise a aula estudada no mesmo dia para fixar o assunto explicado.</li>
@@ -76,7 +109,63 @@
                 <li><span class="marcador"> > </span> <strong><em> Este curso exige que o aluno seja autodidata e fornece o mínimo de suporte para o aluno. Se você ainda não é muito organizado e nunca colocou as dicas em prática na vida e deixa tudo para a última hora, você vai "sofrer" demais neste curso.</em></strong>﻿</li>
             </ul>
         </article>
-        <figure class="mapa" style="margin-top:70px;"><img src="_imagens/mapaDisciplinas.jpg" alt="Mapa de Disciplinas"></figure>
+        <!--<table>
+            <tr>
+                <th>1º período</th>
+                <th>2º período</th>
+                <th>3º período</th>
+                <th>4º período</th>
+                <th>5º período</th>
+                <th>6º período</th>
+            </tr>
+            <tr>
+                <td>Matemática básica (eletiva)</td>
+                <td>Inglês Instrumental</td>
+                <td>Introdução a informática</td>
+                <td>Projeto e Desenvolvimento de Algorítmos</td>
+                <td>Construção de Páginas WEB</td>
+            </tr>
+            <tr>
+                <td>Fundamentos de Algorítmo para Computação</td>
+                <td>Organização de Computadores</td>
+                <td>Fundamentos de Programação</td>
+                <td>Álgebra Linear</td>
+            </tr>
+            <tr>
+                <td>Matemática para Computação</td>
+                <td>Física para Computação</td>
+                <td>Estrutura de Dados</td>
+                <td>Programação com Interfaces Gráficas</td>
+            </tr>
+            <tr>
+                <td>Probabilidade e Estatistica</td>
+                <td>Modelagem de Informação</td>
+                <td>Sistemas Operacionais</td>
+                <td>Banco de Dados</td>
+                <td>Programação Orientada a Objetos</td>
+            </tr>
+            <tr>
+                <td>Engenharia de Software</td>
+                <td>Redes de Computadores I</td>
+                <td>Análise de Sistemas</td>
+                <td>Programação de Aplicações Web</td>
+            </tr>
+            <tr>
+                <td>Empreendedorismo e Ética</td>
+                <td>TCC</td>
+                <td>Redes de Computadores II</td>
+                <td>Arquitetura e Projeto de Sistemas</td>
+                <td>Computação Gráfica</td>
+            </tr>
+        </table>-->
+        <map name="disciplinas">
+            <area shape="rect" coords="17,187,102,237" href="javascript:escreveaulas(0)" alt="Introdução a Informática">
+            <area shape="rect" coords="17,266,102,330" href="javascript:escreveaulas(1)"
+                  alt="Projeto e Desenvolvimento de Algorítmos">
+            <area shape="rect" coords="17,360,102,410" href="javascript:escreveaulas(2)"
+                  alt="Construção de Páginas WEB">
+        </map>
+        <figure class="mapa" id="mapa" style="margin-top:30px;"><img src="_imagens/mapa-disciplinas.png" alt="Mapa de Disciplinas" usemap="#disciplinas"></figure>
     </section>
 </body>
 </html>
